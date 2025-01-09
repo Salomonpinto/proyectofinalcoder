@@ -1,0 +1,58 @@
+
+/* Footer */
+
+#footer {
+    background-color: #e0e0e0; 
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc; 
+    border: 1px solid #000;
+    
+}
+
+
+.footer-redes p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+
+}
+
+.redes img {
+    width: 32px;
+    height: 32px;
+}
+
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footer-nav li {
+    margin: 0 15px;
+    font-size: 18px;
+    position: relative;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sello-creadoporsalomon p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Fin Footer */

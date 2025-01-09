@@ -1,0 +1,512 @@
+
+
+/* 
+
+display: flex;             Utiliza flexbox para alinear los elementos 
+align-items: center;        Centra verticalmente el contenido 
+justify-content: space-between;  Mantiene separación entre texto e imagen *
+
+Orden jerarquico:
+
+!import
+id=#
+class=.
+etiquetas=llamado
+
+Margin= espacio exerno
+Paddin: espacio interno
+
+ambos van a mover elementos si se zarpan con los px
+
+Usan class cuando quieran aplicar el mismo estilo o comportamiento a varios elementos.
+Ej: Tienen varios botones que deben tener el mismo estilo.
+
+Usan id cuando necesiten identificar un solo elemento único en la página.
+Ej: Tienen un encabezado único en la página, como el título principal
+
+!import = No importa que, lo aplica sin criterio alguno
+id = Clasificacion unica e irrepetible en el documento  Ej: D.N.I, Patente, Email, IP (IRREPETIBLE)
+ID <=== SE DESTINAN A ESTRUCTURAS PRINCIPALES/TRONCALES DEL DOCUMENTO/HTML (Para llamar id usar #)
+
+class = Clasificacion que podemos repetir en el documento Ej: cajas, estilos, etc 
+
+selectores /etiquetas = Etiquetas semanticas html 
+
+
+Recuerden que igualmente, el grid areas template es si necesitan hacer un diseño especifico, un diseño armado, como el que se está mostrando en el ejemplo, o algún otro tipo de diseño mas especifico 
+
+Para una cuadricula, tipo una galería de productos, o una galería de imágenes, con el grid template columns y grid template row ya bastaría; le ponen una class="contenedora" a un div contenedor y listo, y no sería necesario un grid area
+*/
+
+ *{
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Montserrat;
+
+}
+
+#main{
+    
+    margin: 0px;
+    
+    min-height: 68vh;
+}
+
+.titSeccion{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+
+
+/* navgacion*/
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0; 
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem; 
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    font-weight: normal;
+    font-size: 1.2rem; 
+    margin: 0 15px;   
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 10px; 
+}
+
+.navbar-toggler-icon {
+    width: 2rem;  
+    height: 2rem; 
+    filter: invert(0);
+}
+
+ /* fin navegacion */
+
+
+
+
+/* Frame Contacto */
+
+#contacto {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.pContacto{
+    text-align: center;
+}
+
+
+#contenedor-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.contactoimg img {
+    width: 650px;
+    height: 400px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.form-contacto {
+    text-align: left;
+    width: 40%;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form label {
+    margin: 5px 0 3px;
+}
+
+#form input,
+#form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#form button {
+    background-color: #464747;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#form button:hover {
+    background-color: #7e7e7e;
+}
+
+/* Fin contacto */
+
+
+
+/* Contenedor principal */
+.herramientas {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+
+.herramientas section {
+    display: flex;
+    align-items: center; 
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.herramientas img {
+    width: 60px; 
+    height: 60px;
+    object-fit: contain; 
+    margin-right: 20px; 
+}
+
+
+.herramientas p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Fin Conocimeintos */
+
+
+/* Sobre Mi */
+
+.sobreMi{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #000;
+}
+.imgInfo{
+    margin-top: 30px;
+    margin-block-end: 30px;                  /* Revisar*/
+    margin-left: 480px;
+}
+.imgsSobremi{
+    text-align: center;
+    margin-block-end: 30px; 
+}
+/* Fin Sobre Mi */
+
+
+/* Frame home*/
+
+.bienvenida {
+    display: flex;             
+    align-items: center;       
+    justify-content: space-between; 
+    padding: 40px;             
+}
+
+.proceso-creativo{
+    padding: 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.texto {
+    max-width: 50%;           
+}
+
+.titSeccion {
+    font-size: 40px;         
+    margin-bottom: 10px;
+}
+
+.presentacion {
+    font-size: 18px;        
+}
+
+.imgcontacto {
+    width: 50%;                
+    height: auto;
+    border-radius: 50px;
+    border: 1px solid;
+}
+
+.realidad{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0,5fr));
+    gap: 40px; /* Espacio entre los elementos */
+    align-items: start;
+}
+
+
+.musimundoRediseno{
+    width: 512px;
+    height: 365px;
+    text-align: center;
+}
+
+
+.framesDibujo{
+    width: 512px;
+    height: 365px;
+    text-align: center;
+}
+
+
+
+.caracteristicas {
+    text-align: center;
+    padding: 2rem;
+    border: #000 solid 2px;
+}
+
+.contenedor-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 2rem;
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-items: center; /* Centra los elementos horizontalmente */
+}
+
+.contenedor-caracteristicas img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+
+/* pseudoclases (efecto agrandar img) */
+.contenedor-caracteristicas div:hover img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.contenedor-caracteristicas div:active {
+    transform: scale(0.95);
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+.proceso-creativo {
+    text-align: center;
+    border: 2px solid #000;
+}
+
+.procesoDesc{
+    width: 50px;
+    height: 50px;
+}
+
+.procesoVali{
+    width: 50px;
+    height: 50px;
+}
+
+.procesoEntrega{
+    width: 50px;
+    height: 50px;
+}
+
+.referencias {
+    text-align: center;
+}
+
+
+.proceso-creativo div img {
+    transition: transform 0.3s ease; 
+}
+
+.proceso-creativo div:hover img {
+    transform: scale(1.2); 
+}
+
+/* Fin home*/
+
+/* Portfolio*/
+
+.carousel-inner img {
+    max-height: 700px; /* Ajusta la altura máxima */
+    width: 100%;       /* Asegura que las imágenes ocupen el ancho del contenedor */
+    object-fit: contain; /* Evita que las imágenes se corten */
+}
+
+
+/* Fin Portfolio*/
+
+
+
+/* Footer */
+
+#footer {
+    background-color: #e0e0e0; 
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc; 
+    border: 1px solid #000;
+    
+}
+
+
+.footer-redes p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+
+}
+
+.redes img {
+    width: 32px;
+    height: 32px;
+}
+
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footer-nav li {
+    margin: 0 15px;
+    font-size: 18px;
+    position: relative;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sello-creadoporsalomon p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Fin Footer */
+
+
+/* Media queries para responsive design */
+@media (max-width: 768px) {
+    
+    /* portfolio responsive*/
+
+    .titSeccion {
+        font-size: 2rem; 
+    }
+    
+    .subtituloPortfolio {
+        font-size: 1.5rem;       /* el carrusel de boostrap ya tiene lo responsive, solo agregue el texto responsive para que cuando se aleje se achique*/
+    }
+    
+    .misConocimientos {
+        font-size: 0.9rem; 
+    }
+
+    /* Fin portfolio responsive*/
+
+    /* Contacto responsive */
+    #contenedor-contacto {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .contactoimg img {
+        width: 90%; 
+        height: auto; 
+    }
+
+    .form-contacto {
+        width: 100%;                /* en cuanto a contacto, agregue como metodo responsive que el formulario se mueva por debajo de la imagen de presentacion que tiene la seccion*/
+        padding: 0 20px; 
+    }
+
+    #form input,
+    #form textarea {
+        font-size: 1rem; 
+        padding: 12px; 
+    }
+
+    #form button {
+        font-size: 1rem; 
+        padding: 12px;
+    }
+    /* Fin Contacto*/
+
+
+    }
+
+
+    
+
+
+    /* Inicio Home*/
+
+
+
+
+
+
+
+/* Fin Contacto */
+
+
+
