@@ -1,0 +1,125 @@
+
+/* Frame home*/
+.bienvenida {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  
+  .proceso-creativo {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .texto {
+    max-width: 50%;
+  }
+  
+  .titSeccion {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .presentacion {
+    font-size: 18px;
+  }
+  
+  .imgcontacto {
+    width: 50%;
+    height: auto;
+    border-radius: 50px;
+    border: 1px solid;
+  }
+  
+  .realidad {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0, 5fr));
+    gap: 40px; /* Espacio entre los elementos */
+    align-items: start;
+  }
+  
+  .musimundoRediseno {
+    width: 512px;
+    height: 365px;
+    text-align: center;
+  }
+  
+  .framesDibujo {
+    width: 512px;
+    height: 365px;
+    text-align: center;
+  }
+  
+  .caracteristicas {
+    text-align: center;
+    padding: 2rem;
+    border: #000 solid 2px;
+  }
+  
+  .contenedor-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 2rem;
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-items: center; /* Centra los elementos horizontalmente */
+  }
+  
+  .contenedor-caracteristicas img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  /* pseudoclases (efecto agrandar img) */
+  .contenedor-caracteristicas div:hover img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .contenedor-caracteristicas div:active {
+    transform: scale(0.95);
+    background-color: #ddd;
+  }
+  
+  .proceso-creativo {
+    text-align: center;
+    border: 2px solid #000;
+  }
+  
+  .procesoDesc {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .procesoVali {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .procesoEntrega {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .referencias {
+    text-align: center;
+  }
+  
+  .proceso-creativo div img {
+    transition: transform 0.3s ease;
+  }
+  
+  .proceso-creativo div:hover img {
+    transform: scale(1.2);
+  }
+  
+
+
+  /* Fin home*/

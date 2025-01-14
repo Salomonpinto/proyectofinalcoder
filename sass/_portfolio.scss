@@ -1,0 +1,6 @@
+/* Portfolio*/
+.carousel-inner img {
+    max-height: 700px; /* Ajusta la altura máxima */
+    width: 100%; /* Asegura que las imágenes ocupen el ancho del contenedor */
+    object-fit: contain; /* Evita que las imágenes se corten */
+}

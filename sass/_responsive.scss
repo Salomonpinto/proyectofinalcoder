@@ -1,0 +1,38 @@
+/* Media queries para responsive design */
+@media (max-width: 768px) {
+    /* portfolio responsive*/
+    .titSeccion {
+    font-size: 2rem;
+    }
+    .subtituloPortfolio {
+    font-size: 1.5rem; /* el carrusel de boostrap ya tiene lo responsive, solo agregue el texto responsive para que cuando se aleje se achique*/
+    }
+    .misConocimientos {
+    font-size: 0.9rem;
+    }
+    /* Fin portfolio responsive*/
+    /* Contacto responsive */
+    #contenedor-contacto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    .contactoimg img {
+    width: 90%;
+    height: auto;
+    }
+    .form-contacto {
+    width: 100%; /* en cuanto a contacto, agregue como metodo responsive que el formulario se mueva por debajo de la imagen de presentacion que tiene la seccion*/
+    padding: 0 20px;
+    }
+    #form input,
+    #form textarea {
+    font-size: 1rem;
+    padding: 12px;
+    }
+    #form button {
+    font-size: 1rem;
+    padding: 12px;
+    }
+    /* Fin Contacto*/
+}
