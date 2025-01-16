@@ -1,12 +1,16 @@
-@import "home";
-@import "sobremi";
-@import "cv";
-@import "portfolio";
-@import "contacto";
+/*pages*/
+@use "home";
+@use "sobremi";
+@use "cv";
+@use "portfolio";
+@use "contacto";
 
-@import "navegacion";
-@import "main";
-@import "footer";   
-@import "responsive";
-git 
+
+/*presets*/
+@use "navegacion";
+@use "main";
+@use "footer";   
+@use "responsive";
+@use "animaciones";
+
 
