@@ -1,0 +1,14 @@
+/* porque elegirme home) */
+.contenedor-caracteristicas div:hover img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.proceso-creativo div img {
+    transition: transform 0.3s ease;
+}
+
+.proceso-creativo div:hover img {
+    transform: scale(1.2);
+}
+

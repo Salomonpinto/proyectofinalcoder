@@ -78,12 +78,6 @@
   margin-bottom: 1rem;
 }
 
-/* pseudoclases (efecto agrandar img) */
-.contenedor-caracteristicas div:hover img {
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
-}
-
 .contenedor-caracteristicas div:active {
   transform: scale(0.95);
   background-color: #ddd;
@@ -111,14 +105,6 @@
 
 .referencias {
   text-align: center;
-}
-
-.proceso-creativo div img {
-  transition: transform 0.3s ease;
-}
-
-.proceso-creativo div:hover img {
-  transform: scale(1.2);
 }
 
 /* Fin home*/
@@ -393,6 +379,19 @@
     padding: 12px;
   }
   /* Fin Contacto*/
+}
+/* porque elegirme home) */
+.contenedor-caracteristicas div:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.proceso-creativo div img {
+  transition: transform 0.3s ease;
+}
+
+.proceso-creativo div:hover img {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */
