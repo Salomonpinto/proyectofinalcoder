@@ -46,16 +46,35 @@
   align-items: start;
 }
 
+/* Animacion para la imagen de musimundo y boceto (Titulo "Hagamos tus ideas realidad", "Tu visión, transformada en experiencias únicas." */
+.hover-container {
+  text-align: center; /* Centra los elementos dentro del contenedor */
+}
+
+/* Wrapper para imagen y texto */
+.image-wrapper {
+  position: relative;
+  display: inline-block; /* Ajusta el tamaño al contenido */
+  width: 512px;
+  height: 365px;
+  overflow: hidden;
+  border-radius: 15px; /* Redondeo del contenedor */
+}
+
+/* Imagen con estilo existente */
 .musimundoRediseno {
   width: 512px;
   height: 365px;
-  text-align: center;
+  border-radius: 15px; /* Redondeo para la imagen */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* Estilo para la nueva imagen (Dibujo bocetado)*/
 .framesDibujo {
   width: 512px;
   height: 365px;
-  text-align: center;
+  border-radius: 15px; /* Redondeo para la imagen */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .caracteristicas {
@@ -128,7 +147,19 @@
 }
 
 /* Fin Sobre Mi */
-/* Contenedor principal */
+/* Espaciado  */
+.espaciado-lateral {
+  padding: 0 40px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+/* Fuente bold */
+.bold-text {
+  font-weight: bold;
+}
+
+/* Herramientas y tecnologias */
 .herramientas {
   display: grid;
   grid-template-columns: 1fr;
@@ -380,7 +411,7 @@
   }
   /* Fin Contacto*/
 }
-/* porque elegirme home) */
+/* porque elegirme Home) */
 .contenedor-caracteristicas div:hover img {
   transform: scale(1.2);
   transition: transform 0.3s ease;
@@ -392,6 +423,42 @@
 
 .proceso-creativo div:hover img {
   transform: scale(1.2);
+}
+
+/* HOME      Animacion para la imagen de musimundo y boceto (Titulo "Hagamos tus ideas realidad", "Tu visión, transformada en experiencias únicas." */
+/* Texto oculto inicialmente */
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  width: 80%; /* Ajusta el ancho del texto según necesites */
+}
+
+/* Efecto hover en la imagen (Musimundo) */
+.image-wrapper:hover .musimundoRediseno {
+  transform: scale(1.1); /* Zoom al 110% */
+  opacity: 0.7;
+}
+
+/* Mostrar el texto al hacer hover */
+.image-wrapper:hover .hover-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Efecto hover en la nueva imagen (Dibujo bocetado) */
+.image-wrapper:hover .framesDibujo {
+  transform: scale(1.1); /* Zoom al 110% */
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=style.css.map */

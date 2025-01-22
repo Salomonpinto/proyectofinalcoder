@@ -44,19 +44,63 @@
     gap: 40px; /* Espacio entre los elementos */
     align-items: start;
   }
+
+
+
+
+
+
+/* Animacion para la imagen de musimundo y boceto (Titulo "Hagamos tus ideas realidad", "Tu visión, transformada en experiencias únicas." */
+.hover-container {
+  text-align: center; /* Centra los elementos dentro del contenedor */
+}
+
+/* Wrapper para imagen y texto */
+.image-wrapper {
+  position: relative;
+  display: inline-block; /* Ajusta el tamaño al contenido */
+  width: 512px;
+  height: 365px;
+  overflow: hidden;
+  border-radius: 15px; /* Redondeo del contenedor */
+}
+
+/* Imagen con estilo existente */
+.musimundoRediseno {
+  width: 512px;
+  height: 365px;
+  border-radius: 15px; /* Redondeo para la imagen */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Estilo para la nueva imagen (Dibujo bocetado)*/
+.framesDibujo {
+  width: 512px;
+  height: 365px;
+  border-radius: 15px; /* Redondeo para la imagen */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+
   
-  .musimundoRediseno {
-    width: 512px;
-    height: 365px;
-    text-align: center;
-  }
   
-  .framesDibujo {
-    width: 512px;
-    height: 365px;
-    text-align: center;
-  }
   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .caracteristicas {
     text-align: center;
     padding: 2rem;
@@ -76,8 +120,6 @@
     height: 60px;
     margin-bottom: 1rem;
   }
-  
-  
   
   .contenedor-caracteristicas div:active {
     transform: scale(0.95);

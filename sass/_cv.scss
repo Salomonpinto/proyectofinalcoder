@@ -1,5 +1,19 @@
 
-  /* Contenedor principal */
+/* Espaciado  */
+.espaciado-lateral {
+    padding: 0 40px; 
+    text-align: justify; 
+    margin: 0 auto; 
+    
+}
+
+/* Fuente bold */
+.bold-text {
+    font-weight: bold;
+}
+
+
+  /* Herramientas y tecnologias */
 .herramientas {
     display: grid;
     grid-template-columns: 1fr;
