@@ -30,6 +30,10 @@
     width: 80%; /* Ajusta el ancho del texto según necesites */
 }
 
+.hover-container {
+    text-align: center; 
+}
+
   /* Efecto hover en la imagen (Musimundo) */
 .image-wrapper:hover .musimundoRediseno {
     transform: scale(1.1); /* Zoom al 110% */

@@ -46,11 +46,6 @@
   align-items: start;
 }
 
-/* Animacion para la imagen de musimundo y boceto (Titulo "Hagamos tus ideas realidad", "Tu visión, transformada en experiencias únicas." */
-.hover-container {
-  text-align: center; /* Centra los elementos dentro del contenedor */
-}
-
 /* Wrapper para imagen y texto */
 .image-wrapper {
   position: relative;
@@ -194,6 +189,13 @@
 
 /* Fin Conocimeintos */
 /* Portfolio*/
+/* Espaciado  */
+.espaciado-lateral {
+  padding: 0 40px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
 .carousel-inner img {
   max-height: 700px; /* Ajusta la altura máxima */
   width: 100%; /* Asegura que las imágenes ocupen el ancho del contenedor */
@@ -410,7 +412,78 @@
     padding: 12px;
   }
   /* Fin Contacto*/
+  /* Home*/
+  .bienvenida .texto h1 {
+    font-size: 1.5rem;
+  }
+  .bienvenida {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .texto {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .titSeccion {
+    font-size: 30px; /* Ajusta el tamaño de fuente del título */
+  }
+  .imgcontacto {
+    display: none;
+  }
+  .caracteristicas .contenedor-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .caracteristicas .contenedor-caracteristicas p {
+    display: none;
+  }
+  .caracteristicas h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .caracteristicas h2 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 24px;
+  }
+  .proceso-creativo {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .proceso-creativo img {
+    width: 65px;
+  }
+  .proceso-creativo h3 {
+    font-size: 1.2rem;
+  }
+  .proceso-creativo p {
+    display: none;
+  }
+  /* Fin Home*/
 }
+/* Sobre Mi*/
+@media (max-width: 900px) {
+  /* Título */
+  #main .titSeccion {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  /* Texto de descripción */
+  #main .sobreMi {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 1rem auto;
+    max-width: 800px;
+  }
+  /* Ocultar imágenes */
+  #main .imgInfo,
+  .imgsSobremi {
+    display: none; /* Oculta las imágenes y la sección de imágenes */
+  }
+}
+/* Fin Sobre Mi*/
 /* porque elegirme Home) */
 .contenedor-caracteristicas div:hover img {
   transform: scale(1.2);
@@ -441,6 +514,10 @@
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   width: 80%; /* Ajusta el ancho del texto según necesites */
+}
+
+.hover-container {
+  text-align: center;
 }
 
 /* Efecto hover en la imagen (Musimundo) */

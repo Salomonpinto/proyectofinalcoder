@@ -11,6 +11,8 @@
     font-size: 0.9rem;
     }
     /* Fin portfolio responsive*/
+
+
     /* Contacto responsive */
     #contenedor-contacto {
     flex-direction: column;
@@ -35,4 +37,98 @@
     padding: 12px;
     }
     /* Fin Contacto*/
+
+
+    /* Home*/
+    .bienvenida .texto h1 {
+        font-size: 1.5rem;
+    }
+    .bienvenida {
+        flex-direction: column; 
+        text-align: center; 
+        padding: 20px; 
+    }
+    
+    .texto {
+        max-width: 100%; 
+        margin-bottom: 20px; 
+    }
+    
+    .titSeccion {
+        font-size: 30px; /* Ajusta el tamaño de fuente del título */
+    }
+    
+    .imgcontacto {
+        display: none;
+    }
+
+    .caracteristicas .contenedor-caracteristicas {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1rem; 
+    }
+
+    .caracteristicas .contenedor-caracteristicas p {
+        display: none; 
+    }
+
+    .caracteristicas h3 {
+        font-size: 1.4rem; 
+        text-align: center; 
+    }
+    
+    .caracteristicas h2 {
+        text-align: center; 
+        margin: 20px auto; 
+        font-size: 24px; 
+    }
+
+    .proceso-creativo {
+        grid-template-columns: 1fr; 
+        gap: 2rem; 
+    }
+
+    .proceso-creativo img {
+        width: 65px; 
+    }
+
+    .proceso-creativo h3 {
+        font-size: 1.2rem; 
+    }
+
+    .proceso-creativo p {
+        display: none; 
+    }
+    /* Fin Home*/
+
 }
+
+
+/* Sobre Mi*/
+
+@media (max-width: 900px) {
+
+
+/* Título */
+#main .titSeccion {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Texto de descripción */
+#main .sobreMi {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+/* Ocultar imágenes */
+#main .imgInfo,
+.imgsSobremi {
+    display: none; /* Oculta las imágenes y la sección de imágenes */
+}
+
+}
+
+/* Fin Sobre Mi*/
