@@ -1,4 +1,4 @@
-Proyecto Final - Portfolio Personal (CoderHouse)
+# Proyecto Final - Portfolio Personal (CoderHouse)
 
 Este proyecto fue desarrollado como entrega final del curso de Desarrollo Web de CoderHouse. Su objetivo principal fue diseñar y desarrollar una página web de portfolio personal para presentar mis proyectos, habilidades y ofrecer métodos de contacto a potenciales clientes o empleadores.
 
@@ -44,4 +44,4 @@ Ofrecer métodos de contacto directos y accesibles.
 
 🖥️ Demo
 
-Puedes ver la página en funcionamiento aquí: Enlace a GitHub Pages o el sitio]](https://salomonpinto.github.io/proyectofinalcoder/
+Puedes ver la página en funcionamiento aquí: https://salomonpinto.github.io/proyectofinalcoder/
